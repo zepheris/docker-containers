@@ -107,6 +107,9 @@ sync
 # Install Crashplan
 /bin/bash /files/crashplan/install.sh
 
+#Adjust Crashplan Memory
+sed -i -e 's/-Xmx1024m/-Xmx2048m/' run.conf
+
 # Install TigerVNC
 /bin/bash /files/tigervnc/install.sh
 
